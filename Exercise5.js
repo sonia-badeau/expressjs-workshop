@@ -21,6 +21,8 @@ app.get('/createcontent', function(req, res){
     
 });
 
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // POST method route
 // This route receives the posted form
